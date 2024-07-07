@@ -1,0 +1,29 @@
+{
+    "name": "ashumizi/laravel-unique-slug",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ashumizi\\LaravelUniqueSlug\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ashraf",
+            "email": "miazi.ashraf@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+
+    "extra": {
+    "laravel": {
+        "providers": [
+            "Ashumizi\\LaravelUniqueSlug\\UniqueSlugServiceProvider"
+        ],
+        "aliases": {
+            "UniqueSlug": "Ashumizi\\LaravelUniqueSlug\\UniqueSlug"
+        }
+    }
+}
+}
